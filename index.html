@@ -80,6 +80,14 @@
             100% { border-color: #da70d6; box-shadow: 0 0 10px #da70d6, 0 0 20px #ff3366; }
         }
 
+        .header-icon-link {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         .header-icon-box img {
             width: 100%;
             height: 100%;
@@ -90,7 +98,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 4px;
+            gap: 6px;
         }
 
         .header-title {
@@ -124,10 +132,24 @@
             background: rgba(56, 189, 248, 0.3);
         }
 
-        .hyper-link {
-            color: #38bdf8;
-            text-decoration: underline;
-            font-weight: 800;
+        .tg-logo-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: rgba(56, 189, 248, 0.16);
+            border: 1px solid rgba(56, 189, 248, 0.65);
+            box-shadow: 0 0 10px rgba(56, 189, 248, 0.35);
+            text-decoration: none;
+            transition: transform 0.2s ease, background 0.2s ease;
+            vertical-align: middle;
+        }
+
+        .tg-logo-link:hover {
+            transform: scale(1.08);
+            background: rgba(56, 189, 248, 0.3);
         }
 
         /* -----------------------------------------
@@ -309,6 +331,10 @@
             padding: 10px;
             background: #0f172a;
             letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
         }
 
         .app-footer span {
@@ -325,15 +351,22 @@
              ========================================= -->
         <div class="top-header">
             <div class="header-icon-box">
-                <a href="https://t.me/patowari_vai_69x" target="_blank" rel="noopener noreferrer" title="Patowari Inbox">
+                <a href="https://t.me/patowari_vai_69x" target="_blank" rel="noopener noreferrer" class="header-icon-link" title="Telegram Inbox">
                     <img src="https://cdn.imageurlgenerator.com/uploads/5f242846-c36b-4437-8bbd-8fab060a831d.jpg" alt="Patowari Profile Icon">
                 </a>
             </div>
             <div class="header-title-container">
                 <div class="header-title">⚡ PATOWARI DK WIN STEP MAKER ⚡</div>
-                <a href="https://t.me/patowari_vai_69x" target="_blank" rel="noopener noreferrer" class="telegram-contact-btn">
-                    <span>💬 কোনো সমস্যা হলে ইনবক্সে যোগাযোগ করুন (@patowari_vai_69x)</span>
-                </a>
+                <div style="display: flex; align-items: center; gap: 8px;">
+                    <a href="https://t.me/patowari_vai_69x" target="_blank" rel="noopener noreferrer" class="telegram-contact-btn">
+                        <span>💬 কোনো সমস্যা হলে ইনবক্সে যোগাযোগ করুন</span>
+                    </a>
+                    <a href="https://t.me/patowari_vai_69x" target="_blank" rel="noopener noreferrer" class="tg-logo-link" title="Telegram">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18 1.897-.962 6.502-1.359 8.627-.168.9-.5 1.201-.82 1.23-.697.064-1.226-.461-1.901-.903-1.056-.693-1.653-1.124-2.678-1.8-1.185-.781-.417-1.21.258-1.911.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.329-.913.489-1.302.481-.428-.009-1.252-.242-1.865-.442-752-.244-1.349-.374-1.297-.789.027-.216.324-.437.893-.663 3.498-1.524 5.83-2.529 6.996-3.014 3.333-1.386 4.025-1.627 4.479-1.635.099-.002.321.023.465.14.12.098.153.228.166.32.013.092.028.301.012.463z" fill="#38bdf8"/>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -377,7 +410,12 @@
              FOOTER SECTION
              ========================================= -->
         <div class="app-footer">
-            🔥 Powered by <span>PATOWARI DK WIN STEP MAKER</span> | <a href="https://t.me/patowari_vai_69x" target="_blank" rel="noopener noreferrer" class="hyper-link">@patowari_vai_69x</a> 🔥
+            <span>PATOWARI DK WIN STEP MAKER</span>
+            <a href="https://t.me/patowari_vai_69x" target="_blank" rel="noopener noreferrer" class="tg-logo-link" title="Telegram">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18 1.897-.962 6.502-1.359 8.627-.168.9-.5 1.201-.82 1.23-.697.064-1.226-.461-1.901-.903-1.056-.693-1.653-1.124-2.678-1.8-1.185-.781-.417-1.21.258-1.911.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.329-.913.489-1.302.481-.428-.009-1.252-.242-1.865-.442-752-.244-1.349-.374-1.297-.789.027-.216.324-.437.893-.663 3.498-1.524 5.83-2.529 6.996-3.014 3.333-1.386 4.025-1.627 4.479-1.635.099-.002.321.023.465.14.12.098.153.228.166.32.013.092.028.301.012.463z" fill="#38bdf8"/>
+                </svg>
+            </a>
         </div>
     </div>
 
